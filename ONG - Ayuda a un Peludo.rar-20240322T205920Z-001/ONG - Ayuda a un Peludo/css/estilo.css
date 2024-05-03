@@ -1,0 +1,56 @@
+header {
+    background-color: rgb(46, 170, 186);
+    width: 100%;
+    text-align: left;
+    z-index: 100;
+}
+
+nav {
+  float:right;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background:hsl(199, 64%, 60%)
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(46, 170, 186);
+    text-align: right;
+}
+a {
+    text-decoration: none;
+    color: black; /* Color del texto antes del hover */
+    position: relative;
+    display: inline-block;
+}
+
+a p {
+    opacity: 1; /* Inicialmente oculto */
+    transition: opacity 0.3s ease;
+
+}
+a:hover p {
+    opacity: 0.5; /* Mostrar el texto al pasar el ratón */
+}
